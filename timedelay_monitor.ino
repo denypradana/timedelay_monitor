@@ -1,6 +1,5 @@
-#include <LiquidCrystal.h>
-// Setting LCD RS E D4 D5 D6 D7
-LiquidCrystal lcd(7, 6, 9, 10, 11, 12);
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27, 16, 2);
 void setup(){
 // pilih LCD 16 x 2
 lcd.begin(16,2);
